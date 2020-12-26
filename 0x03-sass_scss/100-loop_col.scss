@@ -1,0 +1,7 @@
+/* Column and operators */
+$width-size: 100%;
+@for $i from 1 through 4 {
+    .col-#{$i} {
+        width: $width-size / (1 * $i);
+    }
+}
