@@ -1,0 +1,53 @@
+:root {
+    --light-red-color: #e0003c;
+}
+
+.btn-primary {
+    background-color: var(--light-red-color) !important;
+    border-color: var(--light-red-color) !important;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #bc1340 !important;
+}
+
+.btn-outline-primary {
+    color: var(--light-red-color) !important;
+    border-color: var(--light-red-color) !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background-color: transparent !important;
+}
+
+a,
+a:focus,
+a:hover {
+    color: var(--light-red-color) !important;
+}
+
+.card,
+.card-header,
+.card-footer {
+    border-color: var(--light-red-color) !important;
+    border-radius: 1rem !important;
+}
+
+.card-header {
+    background-color: var(--light-red-color) !important;
+    color: white !important;
+    border-bottom-right-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+}
+
+body div:first-child {
+    border-color: var(--light-red-color) !important;
+}
+
+.text-muted {
+    color: #8c8c8c !important;
+}
