@@ -1,0 +1,64 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Harry Potter",
+            "author": "J.K Rowling"
+        },
+        {
+            "title": "Lord of the rings",
+            "author": "J.R.R Tolkien",
+            "id": 2
+        },
+        {
+            "title": "Da Vinci code",
+            "author": "Dan Brown",
+            "id": 3
+        },
+        {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "id": 4
+        },
+        {
+            "title": "The red and the black",
+            "author": "Stendhal",
+            "id": 5
+        },
+        {
+            "title": "Madame Bovary",
+            "author": "Gustave Flaubert",
+            "id": 6
+        },
+        {
+            "title": "Moby-Dick",
+            "author": "Herman Melville",
+            "id": 7
+        },
+        {
+            "title": "Wuthering Heights",
+            "author": "Emily Brontë",
+            "id": 8
+        },
+        {
+            "title": "Le Père Goriot",
+            "author": "Honoré de Balzac",
+            "id": 9
+        },
+        {
+            "title": "Resurrection",
+            "author": "Leo Tolstoy",
+            "id": 10
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}
