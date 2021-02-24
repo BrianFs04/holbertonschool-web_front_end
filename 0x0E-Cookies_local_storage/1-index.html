@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 1</title>
+    </head>
+    <body>
+        <div>
+            <h2>Login to the website</h2>
+            <input type="text" id="firstname" placeholder="Firstname" />
+            <input type="text" id="email" placeholder="Email" />
+            <button onclick="setCookies()">Log me in</button>
+            <h2>Cookies</h2>
+            <button onclick="showCookies()">Show the cookies</button>
+        </div>
+        <script>
+            setCookies = () => {
+                const firstName = document.querySelector("#firstname").value;
+                const email = document.querySelector("#email").value;
+                const today = new Date();
+                today.setTime(today.getTime() + 3600000 * 24 * 10);
+                const expire = today.toUTCString();
+                if (firstName) {
+                    document.cookie = `firstname=${firstName}; expires=${expire}; path=/`;
+                }
+                if (email) {
+                    document.cookie = `email=${email}; expires=${expire}; path=/`;
+                }
+            };
+
+            showCookies = () => {
+                const p = document.createElement("p");
+                const getCookies = document.cookie;
+                p.innerHTML = `Cookies: ${getCookies}`;
+                document.body.appendChild(p);
+            };
+
+            cleanHTML = () => {};
+        </script>
+    </body>
+</html>
